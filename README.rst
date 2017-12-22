@@ -198,14 +198,13 @@ Related
 
 MyNote
 ~~~~~~~
-
-1. sip安装
+1. sip安装.
 从 http://www.riverbankcomputing.co.uk/software/sip/download 下载压缩包 sip-4.19.tar.gz 解压
 	    tar xvf sip-4.19.6.tar.gz 
 	    sudo python configure.py  
 	    sudo make install  
-
-2.PyQt 安装(python2.7 对应PyQt4,python3.5 对应PyQt5)
+2. PyQt 安装
+   python2.7 对应PyQt4,python3.5 对应PyQt5)
   1)安装依赖库:sudo apt-get install qt4-dev-tools qt4-doc qt4-qtconfig qt4-demos qt4-designer  
 	    sudo apt-get install libqwt5-qt4 libqwt5-qt4-dev  
   2)https://sourceforge.net/projects/pyqt/files/PyQt4/ 下载 PyQt4_gpl_x11-4.12.1.tar.gz解压
@@ -213,7 +212,6 @@ MyNote
 	    sudo python configure.py  
 	    sudo make  
 	    sudo make install  
-
 3. 验证安装完成
     python
     import PyQt4.QtGui
@@ -229,7 +227,6 @@ MyNote
 	python configure.y
 	make
 	make install
-
 4. labelimg安装
    git clone https://github.com/betsyweilin/labelImg
 
