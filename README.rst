@@ -201,7 +201,7 @@ MyNote
 1. sip安装.
    从 http://www.riverbankcomputing.co.uk/software/sip/download 下载压缩包 sip-4.19.tar.gz 解压
 
-.. code::
+
     tar xvf sip-4.19.6.tar.gz 
     sudo python configure.py  
     sudo make install  
@@ -211,14 +211,14 @@ MyNote
   
    安装依赖库:
 
-.. code::
+
     sudo apt-get install qt4-dev-tools qt4-doc qt4-qtconfig qt4-demos qt4-designer  
     sudo apt-get install libqwt5-qt4 libqwt5-qt4-dev  
    
    下载
     从https://sourceforge.net/projects/pyqt/files/PyQt4/ 下载 PyQt4_gpl_x11-4.12.1.tar.gz解压下载压缩包 sip-4.19.tar.gz 解压
   
-.. code::
+
             tar zxvf PyQt4_gpl_x11-4.12.1.tar.gz
 	    sudo python configure.py  
 	    sudo make  
@@ -226,25 +226,25 @@ MyNote
 	    
 3. 验证安装完成
 
-.. code::
+
     python
     import PyQt4.QtGui
     
     如果出现错误"the sip module implements API v??? but XXX module requires API v???"
     分别用:
-.. code::
+
 	import sip
 	print(sip, sip.SIP_VERSION_STR)
-.. code::
+
 	sip -V
 	
 	查看sip的版本，发现版本不同的话,根据print(sip, sip.SIP_VERSION_STR)显示的sip位置（如/usr/lib/python2.7/dist_package）将文件夹中所有sip开头的文件删除
 
-.. code::
+
 	sudo rm -f sip*
 	
 	然后，重新用源码安装
-.. code::	
+	
 	python configure.y
 	make
 	make install
